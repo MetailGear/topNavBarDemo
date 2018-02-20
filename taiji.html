@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="//at.alicdn.com/t/font_571059_9fik8rtd8izr529.js"></script>
+</head>
+<style>
+    body{
+        background-color: #666;
+    }
+    .theOnlyOne{
+        background: linear-gradient(to bottom, #1e5799 0%,#000000 0%,#000000 50%,#ffffff 50%,#ffffff 100%);
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        animation: spin 6s linear infinite;
+    }
+
+    .theOnlyOne:before{
+        content: '';
+        display: block;
+        width: 50%;
+        height: 50%;
+        background-color: #000;
+        border-radius: 50%;
+        box-sizing: border-box;
+        border-width: 50px;
+        border-style: solid;
+        border-color: #fff;
+    }
+    .theOnlyOne:after{
+        content: '';
+        display: block;
+        width: 50%;
+        height: 50%;
+        background-color: #fff;
+        border-radius: 50%;
+        box-sizing: border-box;
+        border-width: 50px;
+        border-style: solid;
+        border-color: #000;
+    }
+
+    @keyframes spin {
+        0% {
+            transform:rotate(0deg);
+        }
+        100% {
+            transform:rotate(360deg);
+        }
+    }
+</style>
+<body>
+<div class='theOnlyOne'>
+</div>
+</body>
+</html>
