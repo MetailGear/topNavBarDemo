@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    ul>li{
+        list-style: none;
+    }
+    body{
+        background-color: #000000;
+        color: #fff;
+    }
+    .topNavBar{
+        display: flex;
+        justify-content: space-between;
+        padding: 23px 16px;
+    }
+    .leftTitle{
+        font-family: 'Arial Black';
+        font-size: 24px;
+    }
+    .leftTitle .leftRed{
+        color: #e6686a;
+        margin-right: 4px;
+    }
+    .leftTitle .leftDark{
+        color: #9a9da2;
+    }
+    .rightBar{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        color: #9a9da2;
+        padding-bottom: 5px;
+        font-weight: 600;
+    }
+    .rightBar>ul{
+        display: flex;
+        font-size: 12px;
+    }
+    .rightBar>ul>li{
+        padding: 0 17px;
+    }
+</style>
+<body>
+    <div class="topNavBar">
+        <div class="leftTitle">
+            <span class="leftRed">RS</span><span class="leftDark">card</span>
+        </div>
+        <div class="rightBar">
+            <ul>
+                <li>关于</li>
+                <li>技能</li>
+                <li>作品</li>
+                <li>博客</li>
+                <li>日历</li>
+                <li>联系方式</li>
+                <li>其他</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
